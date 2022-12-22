@@ -1,7 +1,11 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View, SafeAreaView } from "react-native";
+
+import { StyleSheet, Text, View, SafeAreaView, Platform } from "react-native";
 
 export default function App() {
+  // platform will give information about the os ios || android
+  const checkPlatform = Platform.OS;
+  console.log(checkPlatform);
   return (
     <SafeAreaView style={{ backgroundColor: "tomato" }}>
       <View style={styles.container}>
